@@ -5,6 +5,9 @@ html body {
   margin: 0;
   padding: 0;
 }
+html body.dark {
+  font-family: sans-serif;
+}
 html p {
   line-height: 1.4;
   margin-bottom: 15px;
@@ -29,9 +32,27 @@ html header {
   background: lightgray;
   color: gray;
 }
+html main {
+  background: url(../img/content_bg.png) repeat-x;
+  border-top: solid 6px white;
+  position: relative;
+}
+html main::before {
+  content: "";
+  display: block;
+  width: 50%;
+  top: -6px;
+  right: 0;
+  background: #fa631c;
+  height: 6px;
+  position: absolute;
+}
 html footer {
   background-color: #eeeeec;
   overflow: hidden;
+}
+html footer p {
+  color: #8c8c8c;
 }
 
 /*# sourceMappingURL=output.css.map */

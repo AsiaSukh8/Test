@@ -1,0 +1,44 @@
+html{
+    font-family: 'Raleway', sans-serif;
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    p{
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+    
+    .right{
+        float: right;
+    }
+    
+    .left{
+        float: left;
+    }
+    
+    .clear{
+        clear: both;
+    }
+    
+    .container{
+        width: 930px;
+        padding: 0 15px;
+        margin: 0 auto;
+        overflow: hidden;
+        clear: both;
+    }
+    
+    header{
+        background: lightgray;
+        color: gray;
+        //width: calc(100%/3);
+    }
+    
+    footer{
+        background-color: #eeeeec;
+        overflow: hidden;
+    }
+}

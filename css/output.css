@@ -1,0 +1,37 @@
+html {
+  font-family: "Raleway", sans-serif;
+}
+html body {
+  margin: 0;
+  padding: 0;
+}
+html p {
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+html .right {
+  float: right;
+}
+html .left {
+  float: left;
+}
+html .clear {
+  clear: both;
+}
+html .container {
+  width: 930px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+  clear: both;
+}
+html header {
+  background: lightgray;
+  color: gray;
+}
+html footer {
+  background-color: #eeeeec;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=output.css.map */

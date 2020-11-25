@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 930px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+}
+
+header{
+    background: grey;
+}
+
+footer{
+    background-color: #eeeeec;
+    overflow: hidden;
+}
+    footer p{
+        color: #8c8c8c;
+    }
+
+main{
+    background: url(../img/content_bg.png) repeat-x;
+    border-top: solid 6px white;
+    position: relative;
+}
+    main::before{
+        content: '';
+        display: block;
+        width: 50%;
+        top: -6px;
+        right: 0;
+        background: #fa631c;
+        height: 6px;
+        position: absolute;
+    }
+    main .container{
+        padding: 308px 0 65px 0;
+        background: url(../img/container_bg.png) no-repeat;
+
+    }
+    main .content{
+        width: 680px;
+    }
+    main .aside{
+        width: 220px;
+    }
+        main .aside ul.side-menu{
+            list-style: none;
+            padding: 0 0 23px 0;
+        }
+        main .aside ul.side-menu li{
+            margin: 7px 0;
+            padding-left: 30px;
+        }
+        main .aside ul.side-menu li.side-menu-title{
+            color: #5a5a5a;
+            font-size: 16px;
+            padding-left: 0;
+            /* font-style: italic; */
+        }
+        main .aside ul.side-menu li a{
+            color: #009ddb;
+            font-size: 12px;
+        }
+        
+/*new*/
+.main_menu_container{
+    
+}
+.main_menu{
+    background: url(../img/main_menu_bg.png) repeat-x #8c8c8c;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+    .main_menu li{
+        display: block;
+        width: 16.666%;
+        float: left;
+    }
+        .main_menu li a{
+            display: block;
+            padding: 15px 22px;
+        }
+        .main_menu li a[target="_blank"]{
+            background: black;
+        }
+        .main_menu li.active a, 
+        .main_menu li a:hover{
+            background: url(../img/main_menu_active_bg.png) repeat-x #c94e13;
+        }
+            .main_menu li a small{
+                display: block;
+            }
+
+            body.light{
+                background-color: #fff;
+            }
+            body.dark{
+                background-color: #5a5a5a;
+            }
+        .time19{
+            background: linear-gradient(90deg, #fff, red, blue, #000)
+        }
+        body.even main{
+            background: none;
+        }

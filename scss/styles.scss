@@ -1,5 +1,65 @@
+/*@mixin bp-lg{
+	@media only screen and (min-width: 1300px){
+		@content;
+	}
+}
+
+@mixin bp-md{
+	@media only screen and (min-width: 992px) and (max-width: 1299px){
+		@content;
+	}
+}
+
+@mixin bp-sm{
+	@media only screen and (min-width: 768px) and (max-width: 991px){
+		@content;
+	}
+}
+
+@mixin bp-xs{
+	@media only screen and (min-width: 481px) and (max-width: 767px){
+		@content;
+	}
+}
+
+@mixin bp-xxs{
+	@media only screen and (max-width: 767px){
+		@content;
+	}
+}*/
+
+@mixin opacity($opacity, $fontsize){
+    opacity: $opacity;
+    font-size: $fontsize;
+}
+
+@mixin device($deviceName){
+    @if $deviceName==desktop{
+        @media only screen and (min-width: 1300px){
+            @content;
+        }
+    }
+    @if $deviceName==tablet{
+        @media only screen and (min-width: 992px) and (max-width: 1299px){
+            @content;
+        } 
+    }
+    @if $deviceName==mobile{
+        @media only screen and (min-width: 768px) and (max-width: 991px){
+            @content;
+        }
+    }
+}
+
+$varblue: blue;
+$varbrown: brown;
+$varpeach: peachpuff;
+$opacity: .3;
+$fontsize: 1.4em;
+
 html{
     font-family: 'Raleway', sans-serif;
+    @include opacity($opacity, $fontsize);
 
     body{
         margin: 0;
@@ -7,6 +67,21 @@ html{
         &.dark{
             font-family: sans-serif;
         }
+        @include device(desktop){
+            background: $varblue;
+        }
+        @include device(tablet){
+            background: $varbrown;
+        }
+        @include device(mobile){
+            background: $varpeach;
+        }
+        /*@include bp-xs{
+            background: yellow;
+        }*/
+       /* @include bp-xxs{
+            background: red;
+        }*/
     }
     
     p{
